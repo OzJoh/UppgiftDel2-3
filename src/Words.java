@@ -11,7 +11,7 @@ public class Words {
         WordsLogic myWords = new WordsLogic();
         while(running){
             String read = scan.nextLine();
-            if(!myWords.input(read)){
+            if(!myWords.input(read)){  //programmet kör metoden samtidigt som den kollar boolean
                 running = false;
             }
         }

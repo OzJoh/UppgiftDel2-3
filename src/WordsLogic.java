@@ -36,10 +36,10 @@ public class WordsLogic {
         while(isRunning) {
             addRow();
             for (int i = 0; i < arrayLength; i++) {
-                if (words[i].equals("stop") && arrayLength == 1) {
+                if (words[i].equals("stop") && arrayLength == 1) {  //om linjen inehåller endast ordet stop så räknar vi inte med den linjen
                     totalLines --;
                     return false;
-                }else if(words[i].equals("stop")){
+                }else if(words[i].equals("stop")){                  // om ordet stop hittas men är inte det enda ordet på linjen så avbryter vi bara där
                     return false;
                 }
                 else {
